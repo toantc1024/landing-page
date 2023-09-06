@@ -8,6 +8,11 @@
     --header-link-color: #E5E7EB;
     --header-link-size: 18px;
     --primary-button-color: #3882F6;
+    --info-header-text: #1f2937;
+    --info-header-size: 36px;
+    --quote-section-background: #E5E7EB;
+    --quote-text-color: #1F2937;
+    --quote-text-size: 36px;
 }
 
 body {
@@ -112,6 +117,7 @@ button {
 
 .section.info {
     background: white;
+    padding: 80px;
 }
 
 .container {
@@ -137,6 +143,26 @@ button {
 }
 
 .title {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: var(--info-header-size);
+    color: var(--info-header-text);
+    font-weight: bold;
+}
+
+.section.quote {
+    background-color: var(--quote-section-background);
+    padding: 80px;
+}
+
+.text {
+    font-style: italic;
+    font-weight: light;
+    font-size: var(--quote-text-size);
+    color: var(--quote-text-color);
+}
+
+.author {
+    text-align: right;
+    width: 100%;
 }
